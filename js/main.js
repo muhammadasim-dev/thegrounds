@@ -245,6 +245,23 @@ document.documentElement.classList.add("js");
   }
 
   var modal = mountEnquireModal();
+
+  // Floating "Register interest" button, bottom right on every page.
+  (function mountFloatingCta() {
+    if (document.querySelector("[data-float-cta]")) return;
+    var cta = document.createElement("a");
+    cta.href = "#enquire";
+    cta.className = "float-cta";
+    cta.setAttribute("data-open-enquire", "");
+    cta.setAttribute("data-float-cta", "");
+    cta.innerHTML =
+      '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>' +
+      "<span>Register interest</span>";
+    document.body.appendChild(cta);
+    // Sticky: always on screen (fades in once on load).
+    requestAnimationFrame(function () { cta.classList.add("is-visible"); });
+  })();
   var lastFocus = null;
 
   function resetEnquireForm() {
