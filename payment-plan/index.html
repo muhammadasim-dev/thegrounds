@@ -17,6 +17,7 @@
   <meta property="og:title" content="The Grounds by Aldar payment plan">
   <meta property="og:url" content="https://thegrounds.ae/payment-plan/">
   <meta name="theme-color" content="#f3efe6">
+  <link rel="describedby" href="https://thegrounds.ae/llms.txt">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -32,7 +33,7 @@
         <a href="../location/">Location</a>
         <a href="../price-list/">Price list</a>
         <a href="../payment-plan/" aria-current="page">Payment plan</a>
-        <a class="btn" href="#enquire">Register interest</a>
+        <a class="btn" href="#" data-open-enquire>Register interest</a>
       </nav>
     </div>
   </header>
@@ -52,24 +53,6 @@
     <section class="section" style="padding-top:0">
       <div class="wrap">
         <p class="note">See the <a href="../price-list/">price list</a> for guide starting prices. Dubai Land Department registration is generally 4% of the price.</p>
-      </div>
-    </section>
-    <section class="section" id="enquire" style="padding-top:0">
-      <div class="wrap enquire">
-        <h2>Register for the confirmed payment schedule.</h2>
-        <form data-enquire action="#enquire" method="post">
-          <div data-form-fields">
-            <div class="form-grid">
-              <label class="field"><span>Name</span><input name="name" required></label>
-              <label class="field"><span>Email</span><input name="email" type="email" required></label>
-              <label class="field"><span>Phone</span><input name="phone" type="tel" required></label>
-              <label class="field"><span>Home</span><select name="home" required><option value="">Choose</option><option>3-bedroom townhouse</option><option>4-bedroom townhouse</option><option>Not sure yet</option></select></label>
-            </div>
-            <p class="form-error" data-form-error hidden></p>
-            <p style="margin-top:.9rem"><button class="btn" type="submit">Register interest</button></p>
-          </div>
-          <div class="form-success" data-form-success hidden><h3>You’re on the list.</h3></div>
-        </form>
       </div>
     </section>
   </main>

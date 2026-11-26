@@ -13,6 +13,7 @@
   <title>The Grounds by Aldar | Dubai’s First Vitality Community</title>
   <meta name="description" content="The Grounds by Aldar is Dubai’s first vitality community in Dubai Silicon Oasis. Townhouses and villas from AED 2.85M, developed by Aldar with Dubai Holding.">
   <meta name="theme-color" content="#f3efe6">
+  <link rel="describedby" href="https://thegrounds.ae/llms.txt">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -42,7 +43,7 @@
         <a href="location/">Location</a>
         <a href="price-list/">Price list</a>
         <a href="payment-plan/">Payment plan</a>
-        <a class="btn" href="#enquire">Register interest</a>
+        <a class="btn" href="#" data-open-enquire>Register interest</a>
       </nav>
     </div>
   </header>
@@ -327,56 +328,6 @@
       </div>
     </section>
 
-    <section class="section" id="enquire" style="padding-top: 0;">
-      <div class="wrap enquire">
-        <div>
-          <p class="eyebrow"><span></span> Register interest</p>
-          <h2>Floor plans and prices, when they are released.</h2>
-          <p class="intro">Leave your details and the home you want. This form keeps your enquiry on this page. It does not reserve a property.</p>
-        </div>
-        <form data-enquire action="#enquire" method="post">
-          <div data-form-fields>
-            <div class="form-grid">
-              <label class="field">
-                <span>Name</span>
-                <input name="name" type="text" autocomplete="name" required>
-              </label>
-              <label class="field">
-                <span>Email</span>
-                <input name="email" type="email" autocomplete="email" required>
-              </label>
-              <label class="field">
-                <span>Phone</span>
-                <input name="phone" type="tel" autocomplete="tel" required>
-              </label>
-              <label class="field">
-                <span>Home</span>
-                <select name="home" required>
-                  <option value="">Choose a home</option>
-                  <option>3-bedroom townhouse</option>
-                  <option>4-bedroom townhouse</option>
-                  <option>4-bedroom twin villa</option>
-                  <option>3-bedroom villa</option>
-                  <option>4-bedroom villa</option>
-                  <option>Not sure yet</option>
-                </select>
-              </label>
-              <label class="field wide">
-                <span>Note</span>
-                <textarea name="note" placeholder="Anything you want the sales conversation to cover."></textarea>
-              </label>
-            </div>
-            <p class="form-error" data-form-error hidden></p>
-            <p style="margin-top: 0.9rem;"><button class="btn" type="submit">Register interest</button></p>
-            <p class="fine">Guide prices only. Aldar confirms availability, specification and the payment schedule at launch.</p>
-          </div>
-          <div class="form-success" data-form-success tabindex="-1" hidden>
-            <h3>You’re on the list.</h3>
-            <p>Thanks. Your interest is noted in this browser. A reservation only happens later, against the developer’s sales documents.</p>
-          </div>
-        </form>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
@@ -391,7 +342,7 @@
         <a href="location/">Location</a>
         <a href="price-list/">Price list</a>
         <a href="payment-plan/">Payment plan</a>
-        <a href="#enquire">Register</a>
+        <a href="#" data-open-enquire>Register</a>
       </nav>
     </div>
   </footer>

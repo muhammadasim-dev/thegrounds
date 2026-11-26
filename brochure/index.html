@@ -23,6 +23,7 @@
   <meta property="og:image:alt" content="The Grounds by Aldar vitality community marketing banner in Dubai Silicon Oasis">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#f3efe6">
+  <link rel="describedby" href="https://thegrounds.ae/llms.txt">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/styles.css">
   <script type="application/ld+json">
@@ -64,7 +65,7 @@
         <a href="../location/">Location</a>
         <a href="../price-list/">Price list</a>
         <a href="../payment-plan/">Payment plan</a>
-        <a class="btn" href="#enquire">Register interest</a>
+        <a class="btn" href="#" data-open-enquire>Register interest</a>
       </nav>
     </div>
   </header>
@@ -119,44 +120,6 @@
       </div>
     </section>
 
-    <section class="section" id="enquire" style="padding-top:0">
-      <div class="wrap enquire">
-        <div>
-          <p class="eyebrow"><span></span> Brochure request</p>
-          <h2>Send me the brochure when it is live.</h2>
-          <p class="intro">Registering does not reserve a home. It adds you to the list for the brochure, floor plans and prices.</p>
-        </div>
-        <form data-enquire action="#enquire" method="post">
-          <div data-form-fields>
-            <div class="form-grid">
-              <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
-              <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
-              <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required></label>
-              <label class="field">
-                <span>Home</span>
-                <select name="home" required>
-                  <option value="">Choose a home</option>
-                  <option>3-bedroom townhouse</option>
-                  <option>4-bedroom townhouse</option>
-                  <option>4-bedroom twin villa</option>
-                  <option>3-bedroom villa</option>
-                  <option>4-bedroom villa</option>
-                  <option>Not sure yet</option>
-                </select>
-              </label>
-              <label class="field wide"><span>Note</span><textarea name="note" placeholder="Ask for the brochure and any home type."></textarea></label>
-            </div>
-            <p class="form-error" data-form-error hidden></p>
-            <p style="margin-top:.9rem"><button class="btn" type="submit">Request brochure</button></p>
-            <p class="fine">Guide content only until Aldar publishes the official brochure.</p>
-          </div>
-          <div class="form-success" data-form-success tabindex="-1" hidden>
-            <h3>You’re on the list.</h3>
-            <p>Thanks. We have noted your interest in the brochure. A reservation only happens later, against the developer’s sales documents.</p>
-          </div>
-        </form>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">

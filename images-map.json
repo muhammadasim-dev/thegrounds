@@ -1,0 +1,186 @@
+{
+  "site": "https://thegrounds.ae",
+  "updated": "2026-11-26",
+  "sitemaps": {
+    "index": "https://thegrounds.ae/sitemap-index.xml",
+    "pages": "https://thegrounds.ae/sitemap.xml",
+    "images": "https://thegrounds.ae/sitemap-images.xml"
+  },
+  "media": [
+    {
+      "url": "https://thegrounds.ae/assets/home_banner.webp",
+      "file": "home_banner.webp",
+      "type": "image/webp",
+      "pages": ["/", "/brochure/", "/price-list/", "/payment-plan/"],
+      "alt": "The Grounds by Aldar vitality community in Dubai Silicon Oasis — aerial lifestyle render with homes and green landscape"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/hero-banner.mp4",
+      "file": "hero-banner.mp4",
+      "type": "video/mp4",
+      "pages": ["/"],
+      "alt": "Hero banner video for The Grounds by Aldar homepage"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/grounds-landscape-stream.webp",
+      "file": "grounds-landscape-stream.webp",
+      "type": "image/webp",
+      "pages": ["/", "/location/"],
+      "alt": "Landscaped stream and outdoor spaces at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/community-library-lounge.webp",
+      "file": "community-library-lounge.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Community library and lounge at The Grounds by Aldar"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/life-gather-dining.webp",
+      "file": "life-gather-dining.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Outdoor gathering and dining at The Grounds vitality community"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/life-move-garden-walk.webp",
+      "file": "life-move-garden-walk.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Garden walking paths for active living at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/life-play-stream.webp",
+      "file": "life-play-stream.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Family play areas beside stream and greenery"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/life-unwind-pool.webp",
+      "file": "life-unwind-pool.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Pool and relaxation amenities at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/lifestyle-garden-lounge.webp",
+      "file": "lifestyle-garden-lounge.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Garden lounge outdoor seating at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/lifestyle-garden-yoga.webp",
+      "file": "lifestyle-garden-yoga.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Garden yoga and wellness at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/lifestyle-pottery-studio.webp",
+      "file": "lifestyle-pottery-studio.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Creative pottery and makerspace-style community amenity"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/hl-community-garden.webp",
+      "file": "hl-community-garden.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Shared community garden at The Grounds"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/hl-garden-pavilions.webp",
+      "file": "hl-garden-pavilions.webp",
+      "type": "image/webp",
+      "pages": ["/", "/floor-plans/"],
+      "alt": "Garden pavilions and outdoor living between homes"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/hl-gym-garden-view.webp",
+      "file": "hl-gym-garden-view.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Wellness gym with garden views"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/tab-amenities-yoga.webp",
+      "file": "tab-amenities-yoga.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Yoga and wellness amenity spaces"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/tab-community-garden.webp",
+      "file": "tab-community-garden.webp",
+      "type": "image/webp",
+      "pages": ["/"],
+      "alt": "Community gardening and shared green spaces"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/res-living-dining.webp",
+      "file": "res-living-dining.webp",
+      "type": "image/webp",
+      "pages": ["/floor-plans/", "/townhouses/"],
+      "alt": "Indicative 3-bedroom townhouse living and dining layout"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/res-kitchen-dining.webp",
+      "file": "res-kitchen-dining.webp",
+      "type": "image/webp",
+      "pages": ["/floor-plans/", "/townhouses/"],
+      "alt": "Indicative townhouse kitchen and dining"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/res-villa-dining-kitchen.webp",
+      "file": "res-villa-dining-kitchen.webp",
+      "type": "image/webp",
+      "pages": ["/floor-plans/", "/villas/"],
+      "alt": "Indicative 4-bedroom villa open kitchen and dining"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/park.svg",
+      "file": "park.svg",
+      "type": "image/svg+xml",
+      "pages": ["/", "/location/"],
+      "alt": "Park lawn, trees and walking path between homes"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/masterplan.svg",
+      "file": "masterplan.svg",
+      "type": "image/svg+xml",
+      "pages": ["/"],
+      "alt": "Abstract masterplan with clusters around a central park"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/townhouses.svg",
+      "file": "townhouses.svg",
+      "type": "image/svg+xml",
+      "pages": ["/townhouses/"],
+      "alt": "Row of townhouses facing lawns and a path"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/villas.svg",
+      "file": "villas.svg",
+      "type": "image/svg+xml",
+      "pages": ["/villas/"],
+      "alt": "Twin villa and detached villa on separate lawns"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/hero.svg",
+      "file": "hero.svg",
+      "type": "image/svg+xml",
+      "pages": ["/"],
+      "alt": "Low townhouses and villa on lawns with palms"
+    },
+    {
+      "url": "https://thegrounds.ae/assets/favicon.svg",
+      "file": "favicon.svg",
+      "type": "image/svg+xml",
+      "pages": ["*"],
+      "alt": "The Grounds by Aldar site icon"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# The Grounds by Aldar
+
+> Dubai’s first vitality community in Dubai Silicon Oasis. Independent launch site for 3–4 bedroom townhouses and villas by Aldar and Dubai Holding. Guide price from AED 2.85M; sales launch expected December 2026.
+
+Prices, areas and payment schedules are indicative until Aldar publishes official sales documents. Register interest via the popup form on any page — it does not reserve a home.
+
+## Pages
+
+- [Home](https://thegrounds.ae/): Vitality community overview, homes, amenities and launch timeline.
+- [Townhouses](https://thegrounds.ae/townhouses/): 3- and 4-bedroom townhouse types, sizes and guide pricing.
+- [Villas](https://thegrounds.ae/villas/): Twin villas and detached villas with indicative areas.
+- [Location](https://thegrounds.ae/location/): Dubai Silicon Oasis connectivity, schools and everyday access.
+- [Brochure](https://thegrounds.ae/brochure/): Request the official brochure when published at launch.
+- [Floor plans](https://thegrounds.ae/floor-plans/): Indicative layouts and room imagery; PDFs at launch.
+- [Price list](https://thegrounds.ae/price-list/): Guide starting prices for each home type.
+- [Payment plan](https://thegrounds.ae/payment-plan/): Typical 5% / 45% / 50% off-plan instalment schedule.
+
+## Crawling & discovery
+
+- [Sitemap index](https://thegrounds.ae/sitemap-index.xml): Entry point listing page and image sitemaps.
+- [Page sitemap](https://thegrounds.ae/sitemap.xml): HTML URLs for the site.
+- [Image sitemap](https://thegrounds.ae/sitemap-images.xml): Images with titles and captions per page.
+- [Image map JSON](https://thegrounds.ae/images-map.json): Machine-readable media catalog (URLs, alt text, page associations).
+- [LLM full guide](https://thegrounds.ae/llms-full.txt): Extended notes, media list and IndexNow details.
+
+## Optional
+
+- [Legacy prices page](https://thegrounds.ae/price-payment-plan/): Combined prices and payment copy; prefer price-list and payment-plan.

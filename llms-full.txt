@@ -1,0 +1,75 @@
+# The Grounds by Aldar (full)
+
+> Independent marketing site at thegrounds.ae for The Grounds by Aldar — a vitality-led master community in Dubai Silicon Oasis (DSO), developed by Aldar with Dubai Holding. Approximately 1,800 homes: 3–4 bed townhouses, twin villas and villas. Guide starting price AED 2.85M (3-bed townhouse). Expected sales launch December 2026.
+
+## About this site
+
+Static HTML site with local fonts and media (no hotlinked third-party assets). Google Tag Manager container GTM-KSW89QM7. Registration uses a modal form (full name, email, UAE phone +971, broker/buyer role, message); it does not reserve property.
+
+## IndexNow
+
+- Key: 95e171fb8d6144fe8e148624938d73c3
+- Key file: https://thegrounds.ae/95e171fb8d6144fe8e148624938d73c3.txt
+- Submit script (repository): scripts/submit-indexnow.sh
+
+Submissions should include HTML pages, both sitemaps, llms files, and primary image URLs (see images-map.json).
+
+## Sitemaps
+
+- [Sitemap index](https://thegrounds.ae/sitemap-index.xml)
+- [Pages](https://thegrounds.ae/sitemap.xml)
+- [Images](https://thegrounds.ae/sitemap-images.xml)
+- [robots.txt](https://thegrounds.ae/robots.txt)
+
+## HTML pages
+
+- https://thegrounds.ae/
+- https://thegrounds.ae/townhouses/
+- https://thegrounds.ae/villas/
+- https://thegrounds.ae/location/
+- https://thegrounds.ae/brochure/
+- https://thegrounds.ae/floor-plans/
+- https://thegrounds.ae/price-list/
+- https://thegrounds.ae/payment-plan/
+- https://thegrounds.ae/price-payment-plan/
+
+## Guide prices (indicative)
+
+| Home | Guide from (AED) |
+|------|------------------|
+| 3-bedroom townhouse | 2,850,000 |
+| 4-bedroom townhouse | 3,500,000 |
+| 4-bedroom twin villa | 3,950,000 |
+| 3-bedroom villa | 4,100,000 |
+| 4-bedroom villa | 4,800,000 |
+
+## Payment plan (typical off-plan)
+
+5% on booking, 45% during construction, 50% on handover. Exact schedule confirmed by Aldar at launch.
+
+## Media catalog
+
+Structured JSON: https://thegrounds.ae/images-map.json
+
+### Raster (WebP)
+
+- home_banner.webp — community hero / OG image
+- grounds-landscape-stream.webp — landscape and water
+- community-library-lounge.webp — library lounge
+- life-gather-dining.webp, life-move-garden-walk.webp, life-play-stream.webp, life-unwind-pool.webp — vitality pillars
+- lifestyle-garden-lounge.webp, lifestyle-garden-yoga.webp, lifestyle-pottery-studio.webp — lifestyle amenities
+- hl-community-garden.webp, hl-garden-pavilions.webp, hl-gym-garden-view.webp — highlights
+- tab-amenities-yoga.webp, tab-community-garden.webp — amenity tabs
+- res-living-dining.webp, res-kitchen-dining.webp, res-villa-dining-kitchen.webp — indicative interiors / floor plans
+
+### Vector (SVG)
+
+- park.svg, masterplan.svg, townhouses.svg, villas.svg, hero.svg, favicon.svg
+
+### Video
+
+- hero-banner.mp4 — homepage hero (poster: home_banner.webp)
+
+## Canonical domain
+
+https://thegrounds.ae (www redirects to apex on production hosting).

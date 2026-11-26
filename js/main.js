@@ -16,6 +16,7 @@ document.documentElement.classList.add("js");
       banner.load();
     }
   }
+
   var header = document.querySelector("[data-header]");
   var toggle = document.querySelector("[data-nav-toggle]");
   var nav = document.querySelector("[data-nav]");
@@ -45,10 +46,10 @@ document.documentElement.classList.add("js");
       if (label) label.textContent = open ? "Menu" : "Close";
     });
     nav.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", closeNav);
-    });
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") closeNav();
+      link.addEventListener("click", function (event) {
+        if (link.matches("[data-open-enquire]")) return;
+        closeNav();
+      });
     });
   }
 
@@ -70,48 +71,192 @@ document.documentElement.classList.add("js");
     });
   });
 
-  var form = document.querySelector("[data-enquire]");
-  if (form) {
+  var defaultMessage =
+    "I\u2019d like details on The Grounds by Aldar in Dubai Silicon Oasis.";
+
+  function mountEnquireModal() {
+    if (document.querySelector("[data-enquire-modal]")) return;
+    var root = document.createElement("div");
+    root.className = "enquire-modal";
+    root.setAttribute("data-enquire-modal", "");
+    root.hidden = true;
+    root.innerHTML =
+      '<button type="button" class="enquire-modal__backdrop" data-enquire-close aria-label="Close registration form"></button>' +
+      '<div class="enquire-modal__panel" role="dialog" aria-modal="true" aria-labelledby="enquire-modal-title">' +
+      '<button type="button" class="enquire-modal__close" data-enquire-close aria-label="Close">×</button>' +
+      '<p class="enquire-modal__eyebrow">Register interest</p>' +
+      '<h2 class="enquire-modal__title" id="enquire-modal-title">The Grounds in Dubai Silicon Oasis.</h2>' +
+      '<p class="enquire-modal__lede">Share your details and we will follow up with project updates, availability, and next steps.</p>' +
+      '<form data-enquire action="#" method="post">' +
+      '<div data-form-fields class="enquire-modal__fields">' +
+      '<label class="field"><span>Full name</span><input name="name" type="text" autocomplete="name" required></label>' +
+      '<label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>' +
+      '<label class="field"><span>Phone</span>' +
+      '<span class="phone-field">' +
+      '<select name="dial" class="phone-dial" aria-label="Country code"><option value="+971" selected>🇦🇪 +971</option></select>' +
+      '<input name="phone" type="tel" class="phone-number" autocomplete="tel-national" inputmode="tel" required placeholder="50 123 4567">' +
+      "</span></label>" +
+      '<fieldset class="role-field"><legend>I am a</legend>' +
+      '<input type="hidden" name="role" value="buyer" data-role-input>' +
+      '<span class="role-toggle" role="group" aria-label="I am a">' +
+      '<button type="button" class="role-toggle__btn" data-role-pick="broker">Broker</button>' +
+      '<button type="button" class="role-toggle__btn is-active" data-role-pick="buyer" aria-pressed="true">Buyer</button>' +
+      "</span></fieldset>" +
+      '<label class="field"><span>Message</span><textarea name="message" rows="4">' +
+      defaultMessage +
+      "</textarea></label>" +
+      '<p class="form-error" data-form-error hidden></p>' +
+      '<button class="btn btn-block" type="submit">Register interest</button>' +
+      "</div>" +
+      '<div class="form-success enquire-modal__success" data-form-success tabindex="-1" hidden>' +
+      "<h3>You\u2019re on the list.</h3>" +
+      "<p>Thanks. We will follow up with project updates when they are available.</p>" +
+      "</div></form>" +
+      "</div>";
+    document.body.appendChild(root);
+
+    var roleInput = root.querySelector("[data-role-input]");
+    root.querySelectorAll("[data-role-pick]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var role = btn.getAttribute("data-role-pick");
+        roleInput.value = role;
+        root.querySelectorAll("[data-role-pick]").forEach(function (other) {
+          var active = other === btn;
+          other.classList.toggle("is-active", active);
+          other.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+      });
+    });
+
+    root.querySelectorAll("[data-enquire-close]").forEach(function (el) {
+      el.addEventListener("click", closeEnquireModal);
+    });
+
+    var form = root.querySelector("[data-enquire]");
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       var data = new FormData(form);
       var name = String(data.get("name") || "").trim();
       var email = String(data.get("email") || "").trim();
+      var dial = String(data.get("dial") || "+971").trim();
       var phone = String(data.get("phone") || "").trim();
-      var home = String(data.get("home") || "").trim();
-      var message = "";
-      if (name.length < 2) message = "Please enter your name.";
-      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) message = "Please enter a valid email address.";
-      else if (phone.replace(/\D/g, "").length < 7) message = "Please enter a phone number.";
-      else if (!home) message = "Please choose a home type.";
+      var role = String(data.get("role") || "").trim();
+      var message = String(data.get("message") || "").trim();
+      var err = "";
+      if (name.length < 2) err = "Please enter your full name.";
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) err = "Please enter a valid email address.";
+      else if (phone.replace(/\D/g, "").length < 7) err = "Please enter a phone number.";
+      else if (role !== "broker" && role !== "buyer") err = "Please choose broker or buyer.";
+      else if (message.length < 4) err = "Please add a short message.";
 
       var error = form.querySelector("[data-form-error]");
       var success = form.querySelector("[data-form-success]");
       var fields = form.querySelector("[data-form-fields]");
-      if (message) {
+      if (err) {
         error.hidden = false;
-        error.textContent = message;
+        error.textContent = err;
         return;
       }
       error.hidden = true;
       fields.hidden = true;
       success.hidden = false;
       success.focus();
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: "enquire_submit",
+          enquire_role: role,
+          enquire_phone: dial + " " + phone,
+        });
+      }
     });
+
+    return root;
+  }
+
+  var modal = mountEnquireModal();
+  var lastFocus = null;
+
+  function resetEnquireForm() {
+    if (!modal) return;
+    var form = modal.querySelector("[data-enquire]");
+    if (!form) return;
+    var fields = form.querySelector("[data-form-fields]");
+    var success = form.querySelector("[data-form-success]");
+    var error = form.querySelector("[data-form-error]");
+    form.reset();
+    if (fields) fields.hidden = false;
+    if (success) success.hidden = true;
+    if (error) error.hidden = true;
+    var message = form.querySelector('textarea[name="message"]');
+    if (message) message.value = defaultMessage;
+    var roleInput = form.querySelector("[data-role-input]");
+    if (roleInput) roleInput.value = "buyer";
+    form.querySelectorAll("[data-role-pick]").forEach(function (btn) {
+      var buyer = btn.getAttribute("data-role-pick") === "buyer";
+      btn.classList.toggle("is-active", buyer);
+      btn.setAttribute("aria-pressed", buyer ? "true" : "false");
+    });
+  }
+
+  function openEnquireModal() {
+    if (!modal) modal = mountEnquireModal();
+    resetEnquireForm();
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("enquire-open");
+    var nameInput = modal.querySelector('input[name="name"]');
+    if (nameInput) nameInput.focus();
+  }
+
+  function closeEnquireModal() {
+    if (!modal || modal.hidden) return;
+    modal.hidden = true;
+    document.body.classList.remove("enquire-open");
+    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
+  }
+
+  document.addEventListener("click", function (event) {
+    var opener = event.target.closest("[data-open-enquire], a[href='#enquire']");
+    if (!opener) return;
+    event.preventDefault();
+    closeNav();
+    openEnquireModal();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      if (modal && !modal.hidden) {
+        closeEnquireModal();
+        return;
+      }
+      closeNav();
+    }
+  });
+
+  if (window.location.hash === "#enquire") {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+    openEnquireModal();
   }
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var nodes = document.querySelectorAll(".reveal");
   if (reduce || !("IntersectionObserver" in window)) {
-    nodes.forEach(function (node) { node.classList.add("is-in"); });
+    nodes.forEach(function (node) {
+      node.classList.add("is-in");
+    });
     return;
   }
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-in");
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.12 });
-  nodes.forEach(function (node) { observer.observe(node); });
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12 }
+  );
+  nodes.forEach(function (node) {
+    observer.observe(node);
+  });
 })();

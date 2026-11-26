@@ -18,6 +18,7 @@
   <meta property="og:url" content="https://thegrounds.ae/price-list/">
   <meta property="og:image" content="https://thegrounds.ae/assets/home_banner.webp">
   <meta name="theme-color" content="#f3efe6">
+  <link rel="describedby" href="https://thegrounds.ae/llms.txt">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -44,7 +45,7 @@
         <a href="../location/">Location</a>
         <a href="../price-list/" aria-current="page">Price list</a>
         <a href="../payment-plan/">Payment plan</a>
-        <a class="btn" href="#enquire">Register interest</a>
+        <a class="btn" href="#" data-open-enquire>Register interest</a>
       </nav>
     </div>
   </header>
@@ -69,27 +70,6 @@
           </table>
         </div>
         <p class="note">About AED 1,400 per sq. ft. on the entry townhouse. See the <a href="../payment-plan/">payment plan</a> for instalments.</p>
-      </div>
-    </section>
-    <section class="section" id="enquire" style="padding-top:0">
-      <div class="wrap enquire">
-        <div>
-          <h2>Get the official price list at launch.</h2>
-          <p class="intro">Register for guide prices today and the Aldar list when sales open.</p>
-        </div>
-        <form data-enquire action="#enquire" method="post">
-          <div data-form-fields>
-            <div class="form-grid">
-              <label class="field"><span>Name</span><input name="name" type="text" autocomplete="name" required></label>
-              <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
-              <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" required></label>
-              <label class="field"><span>Home</span><select name="home" required><option value="">Choose a home</option><option>3-bedroom townhouse</option><option>4-bedroom townhouse</option><option>4-bedroom twin villa</option><option>3-bedroom villa</option><option>4-bedroom villa</option><option>Not sure yet</option></select></label>
-            </div>
-            <p class="form-error" data-form-error hidden></p>
-            <p style="margin-top:.9rem"><button class="btn" type="submit">Register interest</button></p>
-          </div>
-          <div class="form-success" data-form-success tabindex="-1" hidden><h3>You’re on the list.</h3></div>
-        </form>
       </div>
     </section>
   </main>
