@@ -141,8 +141,8 @@ document.documentElement.classList.add("js");
       '<p class="form-consent">By registering you agree to be contacted about The Grounds by Aldar and to our <a href="/privacy-policy/">privacy policy</a>.</p>' +
       "</div>" +
       '<div class="form-success enquire-modal__success" data-form-success tabindex="-1" hidden>' +
-      "<h3>You\u2019re on the list.</h3>" +
-      "<p>Thanks. We will follow up with project updates when they are available.</p>" +
+      "<h3>Thank you for your inquiry.</h3>" +
+      "<p>A sales advisor will be in touch with you shortly.</p>" +
       "</div></form>" +
       "</div>";
     document.body.appendChild(root);

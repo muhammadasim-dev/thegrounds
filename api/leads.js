@@ -596,7 +596,7 @@ module.exports = async function handler(req, res) {
     });
     return res.status(200).json({
       ok: true,
-      message: "Thank you for your interest. A licensed advisor will be in touch with the details.",
+      message: "Thank you for your inquiry. A sales advisor will be in touch with you shortly.",
       via: result.via,
       email: result.email,
     });
