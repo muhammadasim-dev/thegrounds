@@ -132,7 +132,7 @@ document.documentElement.classList.add("js");
       '<button type="button" class="role-toggle__btn" data-role-pick="broker">Broker</button>' +
       '<button type="button" class="role-toggle__btn is-active" data-role-pick="buyer" aria-pressed="true">Buyer</button>' +
       "</span></fieldset>" +
-      '<label class="field"><span>Message</span><textarea name="message" rows="4">' +
+      '<label class="field"><span>Message</span><textarea name="message" rows="2">' +
       defaultMessage +
       "</textarea></label>" +
       '<label class="hp-field" aria-hidden="true">Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label>' +
