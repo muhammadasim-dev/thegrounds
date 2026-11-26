@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://thegrounds.ae/</loc>
-    <image:image><image:loc>https://thegrounds.ae/assets/home_banner-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/hero-poster.webp</image:loc></image:image>
     <image:image><image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc></image:image>
     <image:image><image:loc>https://thegrounds.ae/assets/life-move-garden-walk.webp</image:loc></image:image>
     <image:image><image:loc>https://thegrounds.ae/assets/life-unwind-pool.webp</image:loc></image:image>
@@ -27,6 +27,15 @@
   <url>
     <loc>https://thegrounds.ae/location/</loc>
     <image:image><image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/tab-community-garden.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://thegrounds.ae/price-list/</loc>
+    <image:image><image:loc>https://thegrounds.ae/assets/home_banner-1600.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://thegrounds.ae/payment-plan/</loc>
+    <image:image><image:loc>https://thegrounds.ae/assets/life-move-garden-walk.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/brochure/</loc>
@@ -35,7 +44,6 @@
   <url>
     <loc>https://thegrounds.ae/floor-plans/</loc>
     <image:image><image:loc>https://thegrounds.ae/assets/res-kitchen-dining.webp</image:loc></image:image>
-    <image:image><image:loc>https://thegrounds.ae/assets/res-villa-dining-kitchen.webp</image:loc></image:image>
     <image:image><image:loc>https://thegrounds.ae/assets/hl-garden-pavilions.webp</image:loc></image:image>
   </url>
 </urlset>

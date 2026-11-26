@@ -44,13 +44,12 @@ PAGES: dict[str, dict] = {
         "og_alt": "The Grounds by Aldar homes and landscaped outdoor spaces in Dubai Silicon Oasis",
         "crumb": None,
         "blurb": "Dubai’s first vitality community in Dubai Silicon Oasis. Townhouses and villas from a guide price of AED 2.85M.",
-        "preload": "assets/home_banner-1600.webp",
-        "preload_srcset": "assets/home_banner-960.webp 960w, assets/home_banner-1600.webp 1600w, assets/home_banner.webp 2880w",
-        "preload_sizes": "(max-width: 980px) 100vw, 50vw",
+        "preload": "assets/hero-poster.webp",
     },
     "townhouses/": {
         "title": "The Grounds by Aldar Townhouses | 3 and 4 Bed in DSO",
         "description": "Townhouses at The Grounds by Aldar, Dubai Silicon Oasis: 3 bed from AED 2.85M (about 2,040 sq. ft.) and 4 bed from AED 3.5M (about 2,200 sq. ft.).",
+        "preload": "assets/res-living-dining.webp",
         "og_image": "assets/res-living-dining.webp",
         "og_alt": "Living and dining room in a townhouse at The Grounds by Aldar, indicative render",
         "crumb": "Townhouses",
@@ -60,6 +59,7 @@ PAGES: dict[str, dict] = {
     "villas/": {
         "title": "The Grounds by Aldar Villas | Twin and Standalone Villas",
         "description": "Villas at The Grounds by Aldar, Dubai Silicon Oasis: 4 bed twin villas from AED 3.95M and 3 and 4 bed standalone villas from AED 4.1M. Register for plans.",
+        "preload": "assets/res-villa-dining-kitchen.webp",
         "og_image": "assets/res-villa-dining-kitchen.webp",
         "og_alt": "Open kitchen and dining room in a villa at The Grounds by Aldar, indicative render",
         "crumb": "Villas",
@@ -69,6 +69,7 @@ PAGES: dict[str, dict] = {
     "location/": {
         "title": "The Grounds by Aldar Location | Dubai Silicon Oasis",
         "description": "Where is The Grounds by Aldar? Dubai Silicon Oasis in east Dubai, beside Academic City, served by Al Ain Road, SMBZ and a Blue Line metro station due 2029.",
+        "preload": "assets/grounds-landscape-stream.webp",
         "og_image": "assets/grounds-landscape-stream.webp",
         "og_alt": "Landscaped stream and green space at The Grounds by Aldar, Dubai Silicon Oasis",
         "crumb": "Location",
@@ -78,6 +79,9 @@ PAGES: dict[str, dict] = {
     "price-list/": {
         "title": "The Grounds by Aldar Price List | From AED 2.85M",
         "description": "The Grounds by Aldar price list: guide prices from AED 2.85M for a 3 bed townhouse up to AED 4.9M for a 4 bed villa, about AED 1,400 per sq. ft. at entry.",
+        "preload": "assets/home_banner-1600.webp",
+        "preload_srcset": "assets/home_banner-960.webp 960w, assets/home_banner-1600.webp 1600w, assets/home_banner.webp 2880w",
+        "preload_sizes": "(max-width: 980px) 100vw, 50vw",
         "og_image": "assets/home_banner.webp",
         "og_alt": "The Grounds by Aldar townhouses and villas in Dubai Silicon Oasis",
         "crumb": "Price list",
@@ -87,6 +91,7 @@ PAGES: dict[str, dict] = {
     "payment-plan/": {
         "title": "The Grounds by Aldar Payment Plan | 5/45/50 Explained",
         "description": "The Grounds by Aldar payment plan: 5% on booking, 45% during construction and 50% on handover, with worked amounts for each home and the 4% DLD fee.",
+        "preload": "assets/life-move-garden-walk.webp",
         "og_image": "assets/life-move-garden-walk.webp",
         "og_alt": "Garden walk at The Grounds by Aldar, indicative render",
         "crumb": "Payment plan",
@@ -96,6 +101,7 @@ PAGES: dict[str, dict] = {
     "brochure/": {
         "title": "The Grounds by Aldar Brochure | Register for the PDF",
         "description": "Register for The Grounds by Aldar brochure PDF, sent when Aldar releases it at the December 2026 launch, with the masterplan, home types and amenities.",
+        "preload": "assets/lifestyle-garden-lounge.webp",
         "og_image": "assets/lifestyle-garden-lounge.webp",
         "og_alt": "Garden lounge at The Grounds by Aldar, indicative render",
         "crumb": "Brochure",
@@ -104,6 +110,7 @@ PAGES: dict[str, dict] = {
     "floor-plans/": {
         "title": "The Grounds by Aldar Floor Plans | 3 and 4 Bed Layouts",
         "description": "Register for The Grounds by Aldar floor plans: 3 and 4 bed townhouse, twin villa and villa layouts, sent as PDFs when Aldar releases them at launch.",
+        "preload": "assets/res-kitchen-dining.webp",
         "og_image": "assets/res-kitchen-dining.webp",
         "og_alt": "Kitchen and dining layout in a home at The Grounds by Aldar, indicative render",
         "crumb": "Floor plans",
@@ -202,7 +209,7 @@ def build_schema(path: str, cfg: dict, faqs: list[tuple[str, str]]) -> list[str]
             "alternateName": ["The Grounds Dubai", "The Grounds Aldar", "The Grounds Dubai Silicon Oasis"],
             "description": cfg["description"],
             "url": url,
-            "image": [f"{BASE}/assets/home_banner.webp", f"{BASE}/assets/grounds-landscape-stream.webp"],
+            "image": [f"{BASE}/assets/hero-poster.webp", f"{BASE}/assets/home_banner.webp", f"{BASE}/assets/grounds-landscape-stream.webp"],
             "address": {"@type": "PostalAddress", "addressLocality": "Dubai Silicon Oasis",
                         "addressRegion": "Dubai", "addressCountry": "AE"},
             "containedInPlace": {"@type": "Place", "name": "Dubai Silicon Oasis, Dubai"},
