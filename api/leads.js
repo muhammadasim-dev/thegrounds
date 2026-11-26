@@ -21,8 +21,9 @@ const PROJECT = { slug: "the-grounds-by-aldar", name: "The Grounds by Aldar" };
 const DEFAULT_FROM = "The Grounds by Aldar <onboarding@resend.dev>";
 
 function env(name, fallback = "") {
-  const value = process.env[name];
-  return value && value.trim() ? value.trim() : fallback;
+  const value = (process.env[name] || "").trim();
+  // "[SENSITIVE]" is the placeholder `vercel env pull` writes for sensitive vars; never a real value.
+  return value && value !== "[SENSITIVE]" ? value : fallback;
 }
 
 function looksLikeFromAddress(value) {
@@ -40,7 +41,8 @@ function isWrongResendFrom(value) {
 // Inbox comes from Vercel env only (same variable names as offplanproject.ae).
 // With Resend's sandbox From, it must be the Resend account login email.
 function leadInbox() {
-  return env("LEAD_TO_EMAIL") || env("LEAD_FORWARD_EMAIL") || env("CONTACT_INBOX");
+  const inbox = env("LEAD_TO_EMAIL") || env("LEAD_FORWARD_EMAIL") || env("CONTACT_INBOX");
+  return inbox.includes("@") ? inbox : "";
 }
 
 function resendFrom() {
