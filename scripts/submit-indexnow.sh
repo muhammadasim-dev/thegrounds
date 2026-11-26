@@ -39,6 +39,10 @@ for sitemap in ("sitemap.xml", "sitemap-images.xml"):
     for img in root_el.findall(".//image:loc", img_ns):
         add((img.text or "").strip())
 
+# Removed URLs: let engines recrawl and see the 301
+for gone in ("price-payment-plan/",):
+    add(f"{base}/{gone}")
+
 # Hero video for discovery
 add(f"{base}/assets/hero-banner.mp4")
 
