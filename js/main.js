@@ -164,7 +164,7 @@ document.documentElement.classList.add("js");
       submit.disabled = true;
       submit.textContent = "Sending\u2026";
 
-      fetch("/api/leads", {
+      fetch("/api/leads/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
