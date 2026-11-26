@@ -51,14 +51,14 @@ Silo rules:
 
 ## Fixed in the follow-up pass (26 November 2026)
 
-- **Lead capture:** The form now POSTs to `/api/leads` (`api/leads.js`, a Vercel function with no dependencies). Leads go to Salesforce Web-to-Lead with the same org and fields as offplanproject.ae (project "The Grounds by Aldar", inquiry type SEO). A Resend email goes out when `RESEND_API_KEY` is set, and a Supabase row is saved when `SUPABASE_URL` and `SUPABASE_SECRET_KEY` are set. The function has a hidden bot-trap field, a rate limit and server-side validation.
+- **Lead capture:** The form now POSTs to `/api/leads/` (`api/leads.js`, a Vercel function with no dependencies). It is a line-for-line port of the offplanproject.ae pipeline: the same request fields, Salesforce payload, email layout and fields, Supabase row, and accept-on-failure behaviour. Leads go to Salesforce Web-to-Lead with the same org and fields as offplanproject.ae (project "The Grounds by Aldar", inquiry type SEO). A Resend email goes out when `RESEND_API_KEY` is set, and a Supabase row is saved when `SUPABASE_URL` and `SUPABASE_SECRET_KEY` are set. The function has a hidden bot-trap field, a rate limit and server-side validation.
 - **Analytics:** No name, email or phone goes to the dataLayer. A successful lead fires `generate_lead`, plus the legacy `enquire_submit` without the phone number.
 - **Privacy:** Added `/privacy-policy/` (`noindex`, kept out of the sitemap). The footer and the form link to it.
 - **Hero image:** `home_banner-960.webp` (130 KB) and `home_banner-1600.webp` (294 KB) are served with `srcset` and a matching preload. The 2880 px original is kept for OG and Google Images.
 
 ## Still open
 
-1. **Vercel environment variables** for the thegrounds project: set `RESEND_API_KEY` (and optionally `LEAD_TO_EMAIL`, plus `SUPABASE_URL` and `SUPABASE_SECRET_KEY`) to get inbox emails and a database copy. Until then, leads go to Salesforce only.
+1. **Vercel environment variables** for the thegrounds project, using the same names as offplanproject.ae: `RESEND_API_KEY`, `RESEND_FROM` and `LEAD_TO_EMAIL` (the inbox; with the Resend sandbox sender it must be the Resend login email). These are required for the inbox email. Optionally add `SUPABASE_URL` and `SUPABASE_SECRET_KEY`. Until then, leads go to Salesforce only.
 2. **Privacy policy entity:** add the operating company name, RERA ORN and a contact email once confirmed.
 3. **After the launch documents are out** (first week of December 2026), replace guide prices with the official price list, add villa areas, the site plan and drive times. Then rerun the build and IndexNow.
 4. **Search Console and Bing Webmaster Tools:** verify the domain, submit `sitemap-index.xml` and request indexing for the 8 URLs.

@@ -71,6 +71,36 @@ document.documentElement.classList.add("js");
     });
   });
 
+  // Ported from offplanproject.ae lib/validation.ts and lib/leads/traffic.ts.
+  function formatFullPhone(countryDial, phone) {
+    var local = String(phone).replace(/\s/g, "");
+    return countryDial + (local.charAt(0) === "0" ? local.slice(1) : local);
+  }
+
+  function getTrafficChannel() {
+    var params = new URLSearchParams(window.location.search);
+    var source = (params.get("utm_source") || "").trim().toLowerCase();
+    var medium = (params.get("utm_medium") || "").trim().toLowerCase();
+    if (source) {
+      if (["cpc", "ppc", "paid", "paidsearch", "display"].indexOf(medium) !== -1) return "paid / " + source;
+      if (["email", "newsletter"].indexOf(medium) !== -1) return "email / " + source;
+      if (["social", "social-media"].indexOf(medium) !== -1) return "social / " + source;
+      return source;
+    }
+    var referrer = (document.referrer || "").trim();
+    if (!referrer) return "direct";
+    try {
+      var host = new URL(referrer).hostname.replace(/^www\./, "").toLowerCase();
+      if (host === window.location.hostname.replace(/^www\./, "")) return "direct";
+      if (/google\./i.test(host)) return "organic / google";
+      if (/bing\./i.test(host)) return "organic / bing";
+      if (/facebook|instagram|linkedin|twitter|x\.com|t\.co|tiktok|youtube|reddit/i.test(host)) return "social / " + host;
+      return "referral / " + host;
+    } catch (e) {
+      return "referral";
+    }
+  }
+
   var defaultMessage =
     "I\u2019d like details on The Grounds by Aldar in Dubai Silicon Oasis.";
 
@@ -167,13 +197,18 @@ document.documentElement.classList.add("js");
       fetch("/api/leads/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        // Same payload shape as offplanproject.ae's register form.
         body: JSON.stringify({
           name: name,
           email: email,
-          phone: dial + " " + phone,
-          role: role,
+          phone: formatFullPhone(dial, phone),
+          project: "The Grounds by Aldar",
+          project_slug: "the-grounds-by-aldar",
+          source_page: window.location.href,
+          traffic_channel: getTrafficChannel(),
           message: message,
-          page: window.location.pathname,
+          client_type: role === "broker" ? "Broker" : "Buyer",
+          inquiry_type: "SEO",
           website: String(data.get("website") || ""),
         }),
       })
