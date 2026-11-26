@@ -1,6 +1,29 @@
 User-agent: *
 Allow: /
 
+# AI and answer-engine crawlers are welcome (llms.txt describes the site)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://thegrounds.ae/sitemap-index.xml
-Sitemap: https://thegrounds.ae/sitemap.xml
-Sitemap: https://thegrounds.ae/sitemap-images.xml

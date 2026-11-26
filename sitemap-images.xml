@@ -3,181 +3,39 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://thegrounds.ae/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/home_banner.webp</image:loc>
-      <image:title>The Grounds by Aldar vitality community banner</image:title>
-      <image:caption>Aerial lifestyle view of The Grounds by Aldar homes and green landscape in Dubai Silicon Oasis.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc>
-      <image:title>The Grounds landscape and stream</image:title>
-      <image:caption>Landscaped outdoor spaces and water features at The Grounds by Aldar.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/life-gather-dining.webp</image:loc>
-      <image:title>Gather — outdoor dining at The Grounds</image:title>
-      <image:caption>Community dining and gathering spaces in the vitality masterplan.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/life-move-garden-walk.webp</image:loc>
-      <image:title>Move — garden walk at The Grounds</image:title>
-      <image:caption>Walking paths and gardens for active outdoor living.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/life-play-stream.webp</image:loc>
-      <image:title>Play — stream and family spaces</image:title>
-      <image:caption>Family-friendly outdoor play areas beside water and greenery.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/life-unwind-pool.webp</image:loc>
-      <image:title>Unwind — pool and relaxation</image:title>
-      <image:caption>Pool and leisure amenities within The Grounds community.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/hl-community-garden.webp</image:loc>
-      <image:title>Community garden at The Grounds</image:title>
-      <image:caption>Shared community garden plots and planting beds.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/hl-garden-pavilions.webp</image:loc>
-      <image:title>Garden pavilions and outdoor living</image:title>
-      <image:caption>Shaded pavilions between homes for outdoor life.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/hl-gym-garden-view.webp</image:loc>
-      <image:title>Wellness and gym with garden views</image:title>
-      <image:caption>Fitness facilities opening to landscaped gardens.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/lifestyle-garden-lounge.webp</image:loc>
-      <image:title>Garden lounge lifestyle</image:title>
-      <image:caption>Outdoor lounge seating in a garden setting.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/lifestyle-garden-yoga.webp</image:loc>
-      <image:title>Garden yoga and mindfulness</image:title>
-      <image:caption>Yoga and wellness activities in community gardens.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/lifestyle-pottery-studio.webp</image:loc>
-      <image:title>Creative studio and pottery</image:title>
-      <image:caption>Creative and makerspace-style community amenities.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/tab-amenities-yoga.webp</image:loc>
-      <image:title>Amenities — yoga and wellness</image:title>
-      <image:caption>Indicative wellness amenity spaces at The Grounds.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/tab-community-garden.webp</image:loc>
-      <image:title>Tab community garden</image:title>
-      <image:caption>Community gardening and shared green spaces.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/community-library-lounge.webp</image:loc>
-      <image:title>Community library and lounge</image:title>
-      <image:caption>Library lounge and indoor community gathering space.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/park.svg</image:loc>
-      <image:title>Community park illustration</image:title>
-      <image:caption>Park lawn, trees and walking paths between homes.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/masterplan.svg</image:loc>
-      <image:title>Masterplan illustration</image:title>
-      <image:caption>Abstract masterplan with housing clusters around a central park.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/home_banner-1600.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/life-move-garden-walk.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/life-unwind-pool.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/life-gather-dining.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/life-play-stream.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/lifestyle-garden-yoga.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/lifestyle-pottery-studio.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/community-library-lounge.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/hl-gym-garden-view.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/hl-community-garden.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/lifestyle-garden-lounge.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/townhouses/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/townhouses.svg</image:loc>
-      <image:title>The Grounds townhouses illustration</image:title>
-      <image:caption>Row of townhouses facing lawns and a walking path.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-living-dining.webp</image:loc>
-      <image:title>Townhouse living and dining indicative interior</image:title>
-      <image:caption>Indicative living and dining layout for 3-bedroom townhouses.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-kitchen-dining.webp</image:loc>
-      <image:title>Townhouse kitchen and dining</image:title>
-      <image:caption>Indicative kitchen and dining area for townhouses.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/res-living-dining.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/villas/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/villas.svg</image:loc>
-      <image:title>The Grounds villas illustration</image:title>
-      <image:caption>Twin villa and detached villa on separate lawns.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-villa-dining-kitchen.webp</image:loc>
-      <image:title>Villa open kitchen and dining</image:title>
-      <image:caption>Indicative open kitchen and dining for 4-bedroom villas.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/res-villa-dining-kitchen.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/location/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/park.svg</image:loc>
-      <image:title>Outdoor setting at Dubai Silicon Oasis</image:title>
-      <image:caption>Green outdoor setting planned for The Grounds in DSO.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc>
-      <image:title>Landscape and stream at The Grounds</image:title>
-      <image:caption>Landscaped community setting in Dubai Silicon Oasis.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/grounds-landscape-stream.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/brochure/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/home_banner.webp</image:loc>
-      <image:title>Brochure hero — The Grounds by Aldar</image:title>
-      <image:caption>Marketing banner for The Grounds vitality community brochure.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/lifestyle-garden-lounge.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://thegrounds.ae/floor-plans/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-living-dining.webp</image:loc>
-      <image:title>3-bedroom townhouse floor plan living area</image:title>
-      <image:caption>Indicative living and dining layout for floor plan requests.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-villa-dining-kitchen.webp</image:loc>
-      <image:title>4-bedroom villa floor plan kitchen</image:title>
-      <image:caption>Indicative villa kitchen and dining layout.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/res-kitchen-dining.webp</image:loc>
-      <image:title>Townhouse kitchen floor plan view</image:title>
-      <image:caption>Kitchen and dining indicative floor plan imagery.</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/hl-garden-pavilions.webp</image:loc>
-      <image:title>Community outdoor spaces between homes</image:title>
-      <image:caption>Garden pavilions context for home layouts.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thegrounds.ae/price-list/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/home_banner.webp</image:loc>
-      <image:title>Price list — The Grounds homes</image:title>
-      <image:caption>Guide prices for townhouses and villas from AED 2.85M.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://thegrounds.ae/payment-plan/</loc>
-    <image:image>
-      <image:loc>https://thegrounds.ae/assets/home_banner.webp</image:loc>
-      <image:title>Payment plan — The Grounds off-plan</image:title>
-      <image:caption>5/45/50 off-plan payment structure for Aldar homes.</image:caption>
-    </image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/res-kitchen-dining.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/res-villa-dining-kitchen.webp</image:loc></image:image>
+    <image:image><image:loc>https://thegrounds.ae/assets/hl-garden-pavilions.webp</image:loc></image:image>
   </url>
 </urlset>

@@ -1,19 +1,19 @@
 # The Grounds by Aldar
 
-> Dubai’s first vitality community in Dubai Silicon Oasis. Independent launch site for 3–4 bedroom townhouses and villas by Aldar and Dubai Holding. Guide price from AED 2.85M; sales launch expected December 2026.
+> Dubai’s first vitality community in Dubai Silicon Oasis. Independent launch site for 3 and 4 bedroom townhouses and villas by Aldar and Dubai Holding. Guide price from AED 2.85M; sales launch expected December 2026.
 
-Prices, areas and payment schedules are indicative until Aldar publishes official sales documents. Register interest via the popup form on any page — it does not reserve a home.
+Prices, areas and payment schedules are indicative until Aldar publishes official sales documents. Register interest via the popup form on any page; it does not reserve a home.
 
 ## Pages
 
-- [Home](https://thegrounds.ae/): Vitality community overview, homes, amenities and launch timeline.
-- [Townhouses](https://thegrounds.ae/townhouses/): 3- and 4-bedroom townhouse types, sizes and guide pricing.
-- [Villas](https://thegrounds.ae/villas/): Twin villas and detached villas with indicative areas.
-- [Location](https://thegrounds.ae/location/): Dubai Silicon Oasis connectivity, schools and everyday access.
-- [Brochure](https://thegrounds.ae/brochure/): Request the official brochure when published at launch.
-- [Floor plans](https://thegrounds.ae/floor-plans/): Indicative layouts and room imagery; PDFs at launch.
-- [Price list](https://thegrounds.ae/price-list/): Guide starting prices for each home type.
-- [Payment plan](https://thegrounds.ae/payment-plan/): Typical 5% / 45% / 50% off-plan instalment schedule.
+- [The Grounds by Aldar](https://thegrounds.ae/): Overview of the vitality community in Dubai Silicon Oasis, home types, amenities and launch timeline.
+- [Townhouses](https://thegrounds.ae/townhouses/): 3 and 4 bedroom townhouses, about 2,040 and 2,200 sq. ft., from AED 2.85M.
+- [Villas](https://thegrounds.ae/villas/): 4 bedroom twin villas from AED 3.95M and 3 and 4 bedroom standalone villas from AED 4.1M.
+- [Location](https://thegrounds.ae/location/): Where The Grounds is in Dubai Silicon Oasis, roads, Academic City and the 2029 Blue Line station.
+- [Price list](https://thegrounds.ae/price-list/): Guide starting prices for all five home types and price per sq. ft. at entry.
+- [Payment plan](https://thegrounds.ae/payment-plan/): The quoted 5/45/50 plan with worked amounts per home, DLD and Oqood fees, escrow.
+- [Brochure](https://thegrounds.ae/brochure/): Register for The Grounds brochure PDF, sent when Aldar releases it at launch.
+- [Floor plans](https://thegrounds.ae/floor-plans/): Register for townhouse and villa floor plans, sent as PDFs at launch.
 
 ## Crawling & discovery
 
@@ -22,7 +22,3 @@ Prices, areas and payment schedules are indicative until Aldar publishes officia
 - [Image sitemap](https://thegrounds.ae/sitemap-images.xml): Images with titles and captions per page.
 - [Image map JSON](https://thegrounds.ae/images-map.json): Machine-readable media catalog (URLs, alt text, page associations).
 - [LLM full guide](https://thegrounds.ae/llms-full.txt): Extended notes, media list and IndexNow details.
-
-## Optional
-
-- [Legacy prices page](https://thegrounds.ae/price-payment-plan/): Combined prices and payment copy; prefer price-list and payment-plan.

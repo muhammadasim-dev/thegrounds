@@ -681,9 +681,7 @@ td:first-child {
     white-space: normal;
   }
   table td:first-child { font-size: 1.35rem; }
-  table td:nth-child(2)::before { content: "Bedrooms"; }
-  table td:nth-child(3)::before { content: "Area"; }
-  table td:nth-child(4)::before { content: "Guide price"; }
+  table td[data-label]:nth-child(n + 2)::before { content: attr(data-label); }
   table td:nth-child(n + 2)::before {
     display: inline-block;
     min-width: 6.5rem;
@@ -1050,3 +1048,44 @@ textarea { min-height: 7rem; resize: vertical; }
   .home-row-name { font-size: 1.25rem; }
   .home-row-price { font-size: 1.05rem; }
 }
+
+/* SEO pass: real renders on pillars, amenities gallery, footer disclosure */
+.pillar img {
+  display: block;
+  width: calc(100% + 2.5rem);
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin: -1.3rem -1.25rem 1rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.pillar { overflow: hidden; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.gallery figure { margin: 0; }
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.card h3 a { color: inherit; }
+.site-footer .footer-legal { margin-top: 0.8rem; font-size: 0.8rem; opacity: 0.8; }
+.footer-nav { flex-wrap: wrap; }
+@media (max-width: 760px) {
+  .gallery { grid-template-columns: 1fr 1fr; }
+}
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-consent { margin: 0.8rem 0 0; font-size: 0.78rem; color: var(--ink-soft); }
+.form-consent a { color: inherit; }

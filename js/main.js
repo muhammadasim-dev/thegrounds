@@ -105,8 +105,10 @@ document.documentElement.classList.add("js");
       '<label class="field"><span>Message</span><textarea name="message" rows="4">' +
       defaultMessage +
       "</textarea></label>" +
+      '<label class="hp-field" aria-hidden="true">Website<input name="website" type="text" tabindex="-1" autocomplete="off"></label>' +
       '<p class="form-error" data-form-error hidden></p>' +
-      '<button class="btn btn-block" type="submit">Register interest</button>' +
+      '<button class="btn btn-block" type="submit" data-submit>Register interest</button>' +
+      '<p class="form-consent">By registering you agree to be contacted about The Grounds by Aldar and to our <a href="/privacy-policy/">privacy policy</a>.</p>' +
       "</div>" +
       '<div class="form-success enquire-modal__success" data-form-success tabindex="-1" hidden>' +
       "<h3>You\u2019re on the list.</h3>" +
@@ -152,22 +154,56 @@ document.documentElement.classList.add("js");
       var error = form.querySelector("[data-form-error]");
       var success = form.querySelector("[data-form-success]");
       var fields = form.querySelector("[data-form-fields]");
+      var submit = form.querySelector("[data-submit]");
       if (err) {
         error.hidden = false;
         error.textContent = err;
         return;
       }
       error.hidden = true;
-      fields.hidden = true;
-      success.hidden = false;
-      success.focus();
-      if (window.dataLayer) {
-        window.dataLayer.push({
-          event: "enquire_submit",
-          enquire_role: role,
-          enquire_phone: dial + " " + phone,
+      submit.disabled = true;
+      submit.textContent = "Sending\u2026";
+
+      fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: dial + " " + phone,
+          role: role,
+          message: message,
+          page: window.location.pathname,
+          website: String(data.get("website") || ""),
+        }),
+      })
+        .then(function (res) {
+          return res.json().catch(function () { return { ok: false }; }).then(function (json) {
+            if (!res.ok || !json.ok) throw new Error(json.message || "We could not send your details. Please try again.");
+          });
+        })
+        .then(function () {
+          fields.hidden = true;
+          success.hidden = false;
+          success.focus();
+          // Analytics: no personal data (name, email, phone) ever goes to the dataLayer.
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "generate_lead",
+            form_name: "register_interest",
+            enquire_role: role,
+            page_path: window.location.pathname,
+          });
+          window.dataLayer.push({ event: "enquire_submit", enquire_role: role });
+        })
+        .catch(function (e) {
+          error.hidden = false;
+          error.textContent = (e && e.message) || "We could not send your details. Please try again.";
+        })
+        .then(function () {
+          submit.disabled = false;
+          submit.textContent = "Register interest";
         });
-      }
     });
 
     return root;

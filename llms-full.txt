@@ -1,6 +1,6 @@
 # The Grounds by Aldar (full)
 
-> Independent marketing site at thegrounds.ae for The Grounds by Aldar — a vitality-led master community in Dubai Silicon Oasis (DSO), developed by Aldar with Dubai Holding. Approximately 1,800 homes: 3–4 bed townhouses, twin villas and villas. Guide starting price AED 2.85M (3-bed townhouse). Expected sales launch December 2026.
+> Independent marketing site at thegrounds.ae for The Grounds by Aldar, a vitality-led master community in Dubai Silicon Oasis (DSO), developed by Aldar with Dubai Holding. Approximately 1,800 homes: 3 and 4 bed townhouses, twin villas and villas. Guide starting price AED 2.85M (3-bed townhouse). Expected sales launch December 2026.
 
 ## About this site
 
@@ -31,7 +31,6 @@ Submissions should include HTML pages, both sitemaps, llms files, and primary im
 - https://thegrounds.ae/floor-plans/
 - https://thegrounds.ae/price-list/
 - https://thegrounds.ae/payment-plan/
-- https://thegrounds.ae/price-payment-plan/
 
 ## Guide prices (indicative)
 
@@ -41,11 +40,29 @@ Submissions should include HTML pages, both sitemaps, llms files, and primary im
 | 4-bedroom townhouse | 3,500,000 |
 | 4-bedroom twin villa | 3,950,000 |
 | 3-bedroom villa | 4,100,000 |
-| 4-bedroom villa | 4,800,000 |
+| 4-bedroom villa | 4,800,000 to 4,900,000 |
 
-## Payment plan (typical off-plan)
+Entry price per sq. ft.: about AED 1,400 (3-bedroom townhouse, about 2,040 sq. ft.). Townhouse areas: about 2,040 sq. ft. (3 bed) and 2,200 sq. ft. (4 bed). Villa areas are released at launch.
 
-5% on booking, 45% during construction, 50% on handover. Exact schedule confirmed by Aldar at launch.
+## Payment plan (quoted ahead of launch)
+
+5% on booking, 45% during construction, 50% on handover. Exact schedule confirmed by Aldar in the sale agreement. No post-handover plan announced. Dubai Land Department fee generally 4% of the price; Oqood registration fee applies.
+
+| Home | Guide price | 5% booking | 45% construction | 50% handover |
+|------|-------------|------------|------------------|--------------|
+| 3-bedroom townhouse | AED 2,850,000 | AED 142,500 | AED 1,282,500 | AED 1,425,000 |
+| 4-bedroom townhouse | AED 3,500,000 | AED 175,000 | AED 1,575,000 | AED 1,750,000 |
+| 4-bedroom twin villa | AED 3,950,000 | AED 197,500 | AED 1,777,500 | AED 1,975,000 |
+| 3-bedroom villa | AED 4,100,000 | AED 205,000 | AED 1,845,000 | AED 2,050,000 |
+| 4-bedroom villa | AED 4,800,000 | AED 240,000 | AED 2,160,000 | AED 2,400,000 |
+
+## Key facts
+
+- Developer: Aldar, in partnership with Dubai Holding
+- Location: Dubai Silicon Oasis (DSO), east Dubai, beside Dubai International Academic City; served by Al Ain Road and Sheikh Mohammed Bin Zayed Road; Dubai Metro Blue Line Silicon Oasis station scheduled for 9 September 2029
+- Homes: about 1,800 townhouses, twin villas and standalone villas
+- Expected sales launch: first week of December 2026
+- Indicated completion: Q2 2030
 
 ## Media catalog
 
@@ -53,14 +70,14 @@ Structured JSON: https://thegrounds.ae/images-map.json
 
 ### Raster (WebP)
 
-- home_banner.webp — community hero / OG image
-- grounds-landscape-stream.webp — landscape and water
-- community-library-lounge.webp — library lounge
-- life-gather-dining.webp, life-move-garden-walk.webp, life-play-stream.webp, life-unwind-pool.webp — vitality pillars
-- lifestyle-garden-lounge.webp, lifestyle-garden-yoga.webp, lifestyle-pottery-studio.webp — lifestyle amenities
-- hl-community-garden.webp, hl-garden-pavilions.webp, hl-gym-garden-view.webp — highlights
-- tab-amenities-yoga.webp, tab-community-garden.webp — amenity tabs
-- res-living-dining.webp, res-kitchen-dining.webp, res-villa-dining-kitchen.webp — indicative interiors / floor plans
+- home_banner.webp (community hero and OG image)
+- grounds-landscape-stream.webp: landscape and water
+- community-library-lounge.webp: library lounge
+- life-gather-dining.webp, life-move-garden-walk.webp, life-play-stream.webp, life-unwind-pool.webp: vitality pillars
+- lifestyle-garden-lounge.webp, lifestyle-garden-yoga.webp, lifestyle-pottery-studio.webp: lifestyle amenities
+- hl-community-garden.webp, hl-garden-pavilions.webp, hl-gym-garden-view.webp: highlights
+- tab-amenities-yoga.webp, tab-community-garden.webp: amenity tabs
+- res-living-dining.webp, res-kitchen-dining.webp, res-villa-dining-kitchen.webp: indicative interiors / floor plans
 
 ### Vector (SVG)
 
@@ -68,7 +85,7 @@ Structured JSON: https://thegrounds.ae/images-map.json
 
 ### Video
 
-- hero-banner.mp4 — homepage hero (poster: home_banner.webp)
+- hero-banner.mp4: homepage hero (poster: home_banner.webp)
 
 ## Canonical domain
 
