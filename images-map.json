@@ -50,7 +50,8 @@
       "file": "life-gather-dining.webp",
       "type": "image/webp",
       "pages": [
-        "/"
+        "/",
+        "/villas/"
       ],
       "alt": "Outdoor dining and gathering space at The Grounds by Aldar."
     },
@@ -59,7 +60,8 @@
       "file": "life-play-stream.webp",
       "type": "image/webp",
       "pages": [
-        "/"
+        "/",
+        "/townhouses/"
       ],
       "alt": "Family play area beside a stream at The Grounds by Aldar."
     },
@@ -104,7 +106,8 @@
       "file": "hl-community-garden.webp",
       "type": "image/webp",
       "pages": [
-        "/"
+        "/",
+        "/villas/"
       ],
       "alt": "Shared community garden and planting beds at The Grounds by Aldar."
     },
@@ -128,6 +131,16 @@
       "alt": "Open-plan living and dining room in a townhouse at The Grounds by Aldar, Dubai Silicon Oasis, indicative render."
     },
     {
+      "url": "https://thegrounds.ae/assets/res-kitchen-dining.webp",
+      "file": "res-kitchen-dining.webp",
+      "type": "image/webp",
+      "pages": [
+        "/townhouses/",
+        "/floor-plans/"
+      ],
+      "alt": "Open kitchen and dining space in a home at The Grounds by Aldar, indicative render."
+    },
+    {
       "url": "https://thegrounds.ae/assets/res-villa-dining-kitchen.webp",
       "file": "res-villa-dining-kitchen.webp",
       "type": "image/webp",
@@ -135,6 +148,15 @@
         "/villas/"
       ],
       "alt": "Open kitchen and dining room in a villa at The Grounds by Aldar, Dubai Silicon Oasis, indicative render."
+    },
+    {
+      "url": "https://thegrounds.ae/assets/tab-amenities-yoga.webp",
+      "file": "tab-amenities-yoga.webp",
+      "type": "image/webp",
+      "pages": [
+        "/villas/"
+      ],
+      "alt": "Two residents doing yoga on a quiet garden deck at The Grounds by Aldar, indicative render."
     },
     {
       "url": "https://thegrounds.ae/assets/tab-community-garden.webp",
@@ -153,15 +175,6 @@
         "/price-list/"
       ],
       "alt": "The Grounds by Aldar townhouses and villas among landscaped gardens in Dubai Silicon Oasis, indicative render."
-    },
-    {
-      "url": "https://thegrounds.ae/assets/res-kitchen-dining.webp",
-      "file": "res-kitchen-dining.webp",
-      "type": "image/webp",
-      "pages": [
-        "/floor-plans/"
-      ],
-      "alt": "Kitchen and dining layout in a home at The Grounds by Aldar, Dubai Silicon Oasis, indicative render."
     },
     {
       "url": "https://thegrounds.ae/assets/hl-garden-pavilions.webp",
