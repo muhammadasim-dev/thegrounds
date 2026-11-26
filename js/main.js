@@ -1,6 +1,21 @@
 document.documentElement.classList.add("js");
 
 (function () {
+  var banner = document.querySelector(".hero-banner");
+  var bannerFrame = document.querySelector(".frame--banner");
+  if (banner && bannerFrame) {
+    banner.addEventListener("loadeddata", function () {
+      bannerFrame.classList.add("has-banner-video");
+    });
+    banner.addEventListener("error", function () {
+      bannerFrame.classList.remove("has-banner-video");
+    });
+    if (banner.readyState >= 2) {
+      bannerFrame.classList.add("has-banner-video");
+    } else {
+      banner.load();
+    }
+  }
   var header = document.querySelector("[data-header]");
   var toggle = document.querySelector("[data-nav-toggle]");
   var nav = document.querySelector("[data-nav]");
